@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+
+	<div class="box"> 
+		<h2>lOGIN FORM</h2>
+		<input type="text" name="" placeholder="User Name" />
+		<input type="text" name="" placeholder="Password" />
+		<button class="button">Login</button>
+		<input type="checkbox" id="myCheck"  onclick="myFunction()"> Keep Me Signed In
+
+<p id="text" style="display:none">Password Saved!</p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+	</div>
+</body>
+</html>
